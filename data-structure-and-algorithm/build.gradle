@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+group 'com.gbwxy.demo'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven { url "http://10.0.45.223/content/groups/mavens" }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.1.7.RELEASE'
+
+
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-aop')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('com.alibaba:fastjson:1.2.59')
+    compile('redis.clients:jedis:3.3.0')
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-amqp', version: '2.1.7.RELEASE'
+    compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '2.1.0'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.3'
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.1.7.RELEASE'
+
+    compile group: 'org.springframework', name: 'spring-context', version: '5.1.8.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version: '5.1.8.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version: '5.1.8.RELEASE'
+}

@@ -1,0 +1,16 @@
+server:
+  port: 2020
+  servlet:
+    context-path: /demo
+
+spring:
+  datasource:
+    xa:
+      data-source-class-name:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.0.46.25:3306/demo_core?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: cloudos
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
