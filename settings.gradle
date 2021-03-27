@@ -4,5 +4,4 @@ include 'spring-annotation'
 include 'zookeeper-demo'
 include 'redis-demo'
 include 'data-structure-and-algorithm'
-include 'MySQLDemo'
 
