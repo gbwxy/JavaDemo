@@ -1,6 +1,7 @@
-package com.gbwxy.B.SwordForOffer.SwordForOffer;
+package com.gbwxy.B.SwordForOffer;
 
-import com.gbwxy.offer.entity.TreeNode;
+
+import com.gbwxy.A.Entity.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
